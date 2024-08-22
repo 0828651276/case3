@@ -23,23 +23,12 @@ header {
 }
 
 header .logo img {
-    height: 70px;
+    height: 70px; /* Đặt kích thước của logo */
 }
 
-header .title {
-    text-align: center;
-    color: white;
-}
 
-header .title h1 {
-    margin: 0;
-    font-size: 24px;
-}
 
-header .title p {
-    margin: 5px 0 0;
-    font-size: 14px;
-}
+
 
 header .menu-toggle {
     display: block;
@@ -51,7 +40,7 @@ header .menu-toggle button {
     color: white;
     font-size: 24px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 10px; /* Đặt khoảng cách giữa logo và hamburger menu */
 }
 
 header .menu-toggle button:hover {
@@ -63,9 +52,9 @@ aside {
     background: #f4f4f4;
     padding: 15px;
     position: fixed;
-    top: 70px;
+    top: 70px; /* Đặt dưới logo */
     left: 0;
-    height: calc(100% - 70px);
+    height: calc(100% - 70px); /* Chiều cao bằng chiều cao của viewport trừ chiều cao của header */
     overflow-y: auto;
     border-right: 1px solid #ccc;
     transform: translateX(-100%);
@@ -79,11 +68,11 @@ aside.active {
 aside ul {
     list-style: none;
     padding: 0;
-    display: none;
+    display: none; /* Ẩn danh sách chức năng khi không có lớp active */
 }
 
 aside.active ul {
-    display: block;
+    display: block; /* Hiển thị danh sách chức năng khi có lớp active */
 }
 
 aside ul li {
@@ -97,17 +86,17 @@ aside ul li a {
     padding: 10px 15px;
     display: block;
     border-radius: 5px;
-    border-left: 4px solid transparent;
-    transition: border-left 0.3s ease, background-color 0.3s ease;
+    border-left: 4px solid transparent; /* Đường thẳng căn lề ban đầu là trong suốt */
+    transition: border-left 0.3s ease, background-color 0.3s ease; /* Hiệu ứng chuyển động cho border-left và background-color */
 }
 
 aside ul li a:hover {
     background-color: #ddd;
-    border-left-color: #333;
+    border-left-color: #333; /* Thay đổi màu đường thẳng khi hover */
 }
 
 main {
-    margin-left: 300px;
+    margin-left: 250px;
     padding: 15px;
     flex: 1;
 }
@@ -122,6 +111,7 @@ footer {
     width: 100%;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     aside {
         display: block;
